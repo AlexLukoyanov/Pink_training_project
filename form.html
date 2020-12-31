@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Пинк</title>
+</head>
+
+<body class="page__body">
+    <header class="page-header">
+        <a class="page-header__logo" href="#">
+            <img src="#" width="" height="" alt="Логотип компании Пинк">
+        </a>
+        <nav class="main-nav">
+            <button class="main-nav__toggle" type="button">
+                <span class="visually-hidden">Открыть меню</span>
+            </button>
+
+            <ul class="main-nav__list site-list">
+                <li class="site-list__item ">
+                    <a href="#">
+                        Главная
+                    </a>
+                </li>
+                <li class="site-list__item">
+                    <a href="#">
+                        Фотографии
+                    </a>
+                </li>
+                <li class="site-list__item site-list__item--active">
+                    <a href="#">
+                        Конкурс
+                    </a>
+                </li>
+                <li class="site-list__item">
+                    <a href="#">
+                        html academy
+                    </a>
+                </li>
+
+            </ul>
+        </nav>
+    </header>
+    <main class="page-main">
+        <div class="header-form">
+            <h1 class="header-form_text">
+                Конкурс на самое <br>
+                безбашенное <br>
+                путешествие с Пинк</h1>
+        </div>
+        <form action="#" method="get">
+            <div class="user-name-form">
+                <p class="user-name-form_text">
+                    Поделитесь своей историей и получите <br>
+                    шанс выиграть ценный приз — 1000 <br>
+                    миль на вашу бонусную карту!
+                </p>
+                <legend class="visually-hidden"> Укажите Фамилию Имя Отчество</legend>
+                <div class="user-name-form_item">
+                    <label for="surname" class="label-form">Фамилия:</label> <br>
+                    <input type="text" name="surname" placeholder="Укажите фамилию *" id="surname" required>
+                </div>
+                <div class="user-name-form_item">
+                    <label for="name" class="label-form">Имя:</label> <br>
+                    <input type="text" name="name" placeholder="Введите ваше имя *" id="name" required>
+                </div>
+                <div class="user-name-form_item">
+                    <label for="patronymic" class="label-form">Отчество:</label> <br>
+                    <input type="text" name="patronymic" placeholder="Ну и отчество тоже" id="patronymic">
+                </div>
+            </div>
+            <div class="achievements-form">
+                <legend class="legend-form">
+                    Ваши безбашенные <br>
+                    достижения в путешествии
+                </legend>
+                <ul class="achievements-form_list">
+                    <li class="achievements-form_item">
+                        <input type="checkbox" name="Took-a-selfie-with-a-shark" id="Took-a-selfie-with-a-shark_filter"
+                            checked>
+                        <label for="Took-a-selfie-with-a-shark_filter">Сделал селфи с акулой</label>
+                    </li>
+                    <li class="achievements-form_item">
+                        <input type="checkbox" name="Burnt-on-the-beach" id="Burnt-on-the-beach_filter" checked>
+                        <label for="Burnt-on-the-beach_filter">Обгорел на пляже</label>
+                    </li>
+                    <li class="achievements-form_item">
+                        <input type="checkbox" name="Saw-Chuck-Norris" id="Saw-Chuck-Norris_filter">
+                        <label for="Saw-Chuck-Norris_filter">Видел Чака Норриса</label>
+                    </li>
+                    <li class="achievements-form_item">
+                        <input type="checkbox" name="Bought-some-souvenirs" id="Bought-some-souvenirs_filter">
+                        <label for="Bought-some-souvenirs_filter">Накупил сувениров</label>
+                    </li>
+                    <li class="achievements-form_item">
+                        <input type="checkbox" name="Held-the-tower" id="Held-the-towe_filter" checked>
+                        <label for="Held-the-towe_filter">Удержал башню</label>
+                    </li>
+                    <li class="achievements-form_item">
+                        <input type="checkbox" name="Trashed-the-hotel" id="Trashed-the-hotel_filter">
+                        <label for="Trashed-the-hotel_filter">Разгромил отель</label>
+                    </li>
+                </ul>
+            </div>
+            <div class="contacts-form">
+                <legend class="visually-hidden"> Контактные данные</legend>
+                <div class="contacts-form_item">
+                    <label for="tel" class="label-form">НОМЕР ТЕЛЕФОНА</label><br>
+                    <input type="tel" name="tel" placeholder="Номер, пожалуйста" id="tel">
+                </div>
+                <div class="contacts-form_item">
+                    <label for="email" class="label-form">АДРЕС ПОЧТЫ</label><br>
+                    <input type="email" name="email" placeholder="Введите почту *" id="email" required>
+                </div>
+            </div>
+            <div class="apрs-form">
+                <legend class="legend-form">
+                    С каким приложением <br>
+                    путешествовали?
+                </legend>
+                <ul class="apps-form_list">
+                    <li class="apps-form_item">
+                        <input type="radio" name="iOS" id="iOS_filter" checked>
+                        <label for="iOS_filter">Pink для iOS</label>
+                    </li>
+                    <li class="apps-form_item">
+                        <input type="radio" name="Android" id="Android_filter">
+                        <label for="Android_filter">Pink на Android</label>
+                    </li>
+                    <li class="apps-form_item">
+                        <input type="radio" name="Windows-Phone" id="Windows-Phone_filter">
+                        <label for="Windows-Phone_filter">Windows Phone</label>
+                    </li>
+                </ul>
+            </div>
+            <div class="feedback-form">
+                <legend for="feedback" class="legend-form">ОПИШИТЕ СВОИ ЭМОЦИИ</legend>
+                <textarea name="feedback" id="feedback"
+                    rows="7">Можно прям в красках,не стесняясь в выражениях</textarea>
+            </div>
+            <button class="button-form" type="submit"><span class="button-form_description">Отправить
+                    форму</span></button>
+            <p class="required-text-form">
+                <sup class="required-text_color">*</sup> — обязательные поля
+            </p>
+        </form>
+        <footer class="page-footer">
+            <div class="page-footer__contacts contacts">
+                <H2 class="visually-hidden"> Контактная информация</H2>
+                <h3 class="contacts__tittle">
+                    Остались вопросы?<br>
+                    Свяжитесь с нами!
+                </h3>
+                <ul class="contacts__list">
+                    <li class="contacts__item">
+                        <b class="contacts__text">Звоните:</b>
+                        <p>
+                            <a class="contacts__phone" href="tel:+79999859999">
+                                <span class="contacts__description">+7(812)555-66-66</span>
+                            </a>
+                        </p>
+                    </li>
+                    <li class="contacts__item">
+                        <b class="contacts__text">Пишите:</b>
+                        <p>
+                            <a class="contacts__mail" href="mailto:mail@htmlacademy.ru">
+                                <span class="contacts__description">mail@htmlacademy.ru </span>
+                            </a>
+                        </p>
+                    </li>
+                    <li class="contacts__item">
+                        <b class="contacts__text">Приезжайте в гости:</b>
+                        <p>
+                            <a class="contacts__mail" href="mailto:mail@htmlacademy.ru">
+                                <span class="contacts__description">mail@htmlacademy.ru </span>
+                            </a>
+                        </p>
+                    </li>
+                </ul>
+            </div>
+            <div class="page-footer__map">
+                <img src="#" alt="Карта проезда">
+            </div>
+            <div class="page-footer__wrapper">
+                <a class="page-footer__logo" href="#">
+                    <img src="#" alt="Логотип компании Пинк">
+                </a>
+                <ul class="page-footer__social-list social-list">
+                    <li class="social__item">
+                        <a class="social__link social__link--twitter" href="#">Мы в Твиттере</a>
+                    </li>
+                    <li class="social__item">
+                        <a class="social__link social__link--facebook" href="#">Мы в Фэйсбуке</a>
+                    </li>
+                    <li class="social__item">
+                        <a class="social__link social__link--youtube" href="#">Мы на Ютубе</a>
+                    </li>
+                </ul>
+                <ul class="page-footer__copyright copyright">
+                    <li class="copyright__item">
+                        <p class="copyright__text">Разработано</p>
+                    </li>
+                    <li class="copyright__item">
+                        <a class="copyright__logo" href="#">
+
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </footer>
