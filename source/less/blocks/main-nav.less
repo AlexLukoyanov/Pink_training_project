@@ -19,6 +19,7 @@
  background-color:#283645;
  cursor: pointer;
  border: none;
+ outline: none;
 }
 .main-nav--closed .main-nav__toggle::before {
     content: "";
@@ -31,17 +32,49 @@
     box-shadow: 0 9px 0 0 #ffffff,0 18px 0 0 #ffffff;
     border-radius: 10px;
 }
-.main-nav--closed .main-nav__toggle:hover::before{
+.main-nav--closed .main-nav__toggle{
+    &:hover::before,
+    &:focus::before{
     background-color:#D22856;
     box-shadow: 0 9px 0 0 #D22856,0 18px 0 0 #D22856;
-    
+}
 }
 .main-nav--closed .main-nav__toggle:active::before{
     background-color:fade(#D22856,30%);
     box-shadow: 
     0 9px 0 0 fade(#D22856,30%),
     0 18px 0 0 fade(#D22856,30%);
-    
+}
+.main-nav--opened .main-nav__toggle {
+    &::before,
+    &::after{
+        content: "";
+        position: absolute;
+        top: 10px;
+        left: 24px;
+        width: 29px;
+        height: 3px;
+        background-color: #ffffff;
+    }
+    &::before{
+        transform: rotate(45deg);
+        box-shadow: none;
+    }
+    &::after{
+        transform: rotate(-45deg);
+    }
+    &:hover::before,
+    &:hover::after{
+        background-color:#D22856;
+    }
+    &:focus::before,
+    &:focus::after{             
+        background-color:#D22856;
+    }
+    &:active::before,
+    &:active::after{             
+        background-color:fade(#D22856,30%);
+    }
 }
 
 
