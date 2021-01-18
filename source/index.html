@@ -6,19 +6,22 @@
   <title>HTML Academy: Пинк</title>
   <link rel="stylesheet" href="css/style.css">
   <link href="css/normalize.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 
 <body class="page__body">
   <header class="page-header">
-    <nav class="main-nav main-nav--closed ">
-      <a class="main-nav__logo" href="index.html">
+    <div class="page-header__logo">
+      <a class="header__logo" href="index.html">
         <img src="img/logo-pink-white-mobile.svg" width="74px" height="23px" alt="Логотип компании Пинк">
       </a>
+    </div>
+    <nav class="main-nav main-nav--closed">
       <button class="main-nav__toggle" type="button">
         <span class="visually-hidden">Открыть меню</span>
       </button>
 
-      <!-- <ul class="main-nav__list ">
+      <ul class="main-nav__list">
         <li class="main-nav__item main-nav__item--active">
           <a href="#">
             Главная
@@ -39,8 +42,7 @@
             html academy
           </a>
         </li>
-
-      </ul> -->
+      </ul>
     </nav>
   </header>
   <main class="page-main">
