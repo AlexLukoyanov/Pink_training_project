@@ -13,7 +13,11 @@
   <header class="page-header">
     <div class="page-header__wrapper">
       <a class="page-header__logo" href="index.html">
-        <img src="img/logo-pink-white-mobile.svg" width="74px" height="23px" alt="Логотип компании Пинк">
+        <picture>
+          <source media="(min-width: 1200px)" srcset="img/logo-pink-white-desktop.svg">
+          <source media="(min-width: 660px)" srcset="img/logo-pink-white-tablet.svg">
+          <img src="img/logo-pink-white-mobile.svg" alt="Логотип компании Пинк">
+        </picture>
       </a>
 
       <nav class="main-nav main-nav--closed">
