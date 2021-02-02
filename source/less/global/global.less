@@ -16,6 +16,12 @@
     white-space: nowrap;
   }
  .container {
+   min-width: 320px;
+   margin: 0 auto;
+   @media(min-width:@tablet-width){
+    width: auto;
+    padding: 0 10px;
+   }
    @media(min-width:@desktop-width){
   max-width:960px;
   margin: 0px auto;
