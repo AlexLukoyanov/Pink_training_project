@@ -47,19 +47,14 @@
 }
 .download__title {
     position: relative;
+    width: 304px;
     font-weight: 300;
     font-size: 24px;
     line-height: 120%;
     text-align: center;
     margin-bottom: 5px;
     margin-top: 24px;
-    & br:first-child {
-        display:none;
-        @media (min-width:@tablet-width){
-            display:inline;
-        }
-    }
-    &::after{
+  &::after{
         content: "";
         display: block;
         position: relative;
@@ -108,11 +103,13 @@
    
     }
     @media (min-width:@tablet-width) {
+    width: 190px;
     font-size: 40px;
     margin: 0px 0px 31px 0px;
     padding: 0px 0px 0px 0px;
     }
     @media (min-width:@desktop-width){
+    width: 240px;
     font-size: 50px;
     line-height: 68px; 
     padding: 4px 0px 0px 0px;
