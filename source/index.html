@@ -9,7 +9,39 @@
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;700&display=swap" rel="stylesheet">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+  <script defer src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+  <script  defer src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script defer src="js/app.js"></script>
 </head>
+<script type="module">
+  import Swiper from 'https://unpkg.com/swiper/swiper-bundle.esm.browser.min.js'
+
+  const swiper = new Swiper('.swiper-container', {
+  // Optional parameters
+  direction: 'horizontal',
+  loop: true,
+
+  // If we need pagination
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
+  },
+
+  // Navigation arrows
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+
+  // // And if we need scrollbar
+  // scrollbar: {
+  //   el: '.swiper-scrollbar',
+  // },
+});
+
+</script>
 
 <body class="page__body">
   <header class="page-header">
@@ -150,16 +182,53 @@
     </section>
     <section class="reviews">
       <h2 class="visually-hidden">Отзывы</h2>
+      <div class="swiper-container">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide">        
+            <h4 class="reviews__name"> Николай Петров</h4>
+            <blockquote class="reviews__description">
+              «Это приложение перевернуло мой мир <br>
+              и позволило по-новому взглянуть на <br>
+              привычные серые вещи! А еще я <br>
+              познакомился со своей будущей женой <br>
+              в комментариях к выложенной <br>
+              фотографии!»
+            </blockquote></div>
+          <div class="swiper-slide">        <h4 class="reviews__name"> Николай Петров</h4>
+            <blockquote class="reviews__description">
+              «Это приложение перевернуло мой мир <br>
+              и позволило по-новому взглянуть на <br>
+              привычные серые вещи! А еще я <br>
+              познакомился со своей будущей женой <br>
+              в комментариях к выложенной <br>
+              фотографии!»
+            </blockquote></div>
+          <div class="swiper-slide">        <h4 class="reviews__name"> Николай Петров</h4>
+            <blockquote class="reviews__description">
+              «Это приложение перевернуло мой мир <br>
+              и позволило по-новому взглянуть на <br>
+              привычные серые вещи! А еще я <br>
+              познакомился со своей будущей женой <br>
+              в комментариях к выложенной <br>
+              фотографии!»
+            </blockquote></div>
+          ...
+        </div>
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
+      
+        <!-- If we need navigation buttons -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+      
+        <!-- If we need scrollbar -->
+        <!-- <div class="swiper-scrollbar"></div> -->
+      </div>
+    
       <div class="reviews-list">
-        <h4 class="reviews__name"> Николай Петров</h4>
-        <blockquote class="reviews__description">
-          «Это приложение перевернуло мой мир <br>
-          и позволило по-новому взглянуть на <br>
-          привычные серые вещи! А еще я <br>
-          познакомился со своей будущей женой <br>
-          в комментариях к выложенной <br>
-          фотографии!»
-        </blockquote>
+
       </div>
     </section>
     <section class="price">
@@ -249,5 +318,6 @@
     </footer>
   </main>
 </body>
+
 
 </html>
