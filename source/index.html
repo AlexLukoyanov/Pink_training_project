@@ -27,6 +27,7 @@
   pagination: {
     el: '.swiper-pagination',
     clickable: true,
+    bulletActiveClass: "huemoe__active"
   },
 
   // Navigation arrows
@@ -174,7 +175,7 @@
         <div class="science__description">
           <h3 class="science__title">Эффект на&nbsp;24 часа!</h3>
           <p class="science__text">
-            Британские ученые провели исследования и&nbsp;доказали, что положительный эффект от&nbsp;использования приложения длится целые сутки!
+            Британские ученые провели исследования и доказали,что положительный эффект от&nbsp;использования приложения длится целые сутки!
           </p>
           <a href="#" class="science_link">Узнать больше об исследовании</a>
         </div>
@@ -231,23 +232,87 @@
 
       </div>
     </section>
-    <section class="price">
+    <section class="price container">
       <h2 class="visually-hidden"> Цена услуг</h2>
       <table class="price__table">
         <tr class="table__tittle">
-          <td>Стандарт
-            <p class="price__item"> 3,99 USD </p>
+          <th>
+            <span class="visually-hidden">Тарифы </span>
+          </th>
+          <th class="tittle__list">
+            <span class="price__tittle">База </span>
+            <span class="price__item"> 1,99 USD </span> 
+          </th>
+          <th class="tittle__list">
+            <span class="price__tittle price__tittle--hit">Стандарт </span>
+            <span class="price__item"> 3,99 USD </span>
+          </th>
+          <th class="tittle__list">
+            <span class="price__tittle">Анлим </span>
+            <span class="price__item">9,99 USD </span>
+          </th>
+        </tr>
+        <tr class="table__list">
+          <td class="table__item">
+            <span>Розовый фильтр</span>
+          </td>
+          <td class="table__item item_status--on">
+            <span class="visually-hidden">Розовый фильтр</span>
+            <span class="visually-hidden item__status">
+              Включено</span>
+          </td>
+          <td class="table__item item_status--on">
+            <span class="visually-hidden">Розовый фильтр</span>
+            <span class="visually-hidden item__status">
+              Включено</span>
+          </td>
+          <td class="table__item item_status--on">
+            <span class="visually-hidden">Розовый фильтр</span>
+            <span class="visually-hidden item__status ">
+              Включено</span>
           </td>
         </tr>
-        <tr class="table-list">
-          <td>Розовый фильтр</td>
+        <tr class="table__list">
+          <td class="table__item">
+            <span>Смайлики</span>
+          </td>
+          <td class="table__item item_status--off">
+            <span class="visually-hidden">Смайлики</span>
+            <span class="visually-hidden item__status ">
+              Включено</span>
+          </td>
+          <td class="table__item item_status--on">
+            <span class="visually-hidden">Смайлики</span>
+            <span class="visually-hidden item__status">
+              Включено</span>
+          </td>
+          <td class="table__item item_status--on">
+            <span class="visually-hidden">Смайлики</span>
+            <span class="visually-hidden item__status">
+              Включено</span>
+          </td>
         </tr>
-        <tr class="table-list">
-          <td>Смайлики</td>
+        <tr class="table__list">
+          <td class="table__item">
+            <span>Коментрарии</span>
+          </td>
+          <td class="table__item item_status--off">
+            <span class="visually-hidden">Коментрарии</span>
+            <span class="visually-hidden item__status ">
+              Включено</span>
+          </td>
+          <td class="table__item item_status--off">
+            <span class="visually-hidden">Коментрарии</span>
+            <span class="visually-hidden item__status ">
+              Включено</span>
+          </td>
+          <td class="table__item item_status--on">
+            <span class="visually-hidden">Коментрарии</span>
+            <span class="visually-hidden item__status item_status--on">
+              Включено</span>
+          </td>
         </tr>
-        <tr class="table-list">
-          <td>Комментарии</td>
-        </tr>
+        
       </table>
     </section>
     <footer class="page-footer">
