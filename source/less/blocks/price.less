@@ -1,5 +1,16 @@
+.price-container {
+  margin: 0 auto;
+  min-width: 320px;
+  max-width: 960px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
 .price__table {
   border-collapse: collapse;
+  @media (min-width: @tablet-width) {
+    width: 100%;
+    margin: 0 auto;
+  }
 }
 .table__tittle {
   color: #ffffff;
@@ -7,54 +18,82 @@
 .tittle__list {
   background: #283645;
   border: 2px solid #283645;
-  padding: 17px 65px 17px 65px;
+  padding: 17px 20px 17px 20px;
   border-right: 2px solid #f2f2f2;
   &:last-child {
     border-right: 2px solid #283645;
+  }
+  @media (min-width: @tablet-width) {
+    padding: 10px 20px 9px 20px;
+    width: 25%;
+  }
+  @media (min-width: @desktop-width) {
+    padding: 17px 20px 17px 20px;
   }
 }
 
 .price__tittle {
   display: block;
-  font-size: 18px;
+  font-size: 16px;
   line-height: 30px;
   font-weight: bold;
   text-align: center;
   text-transform: uppercase;
+  @media (min-width: @desktop-width) {
+    font-size: 18px;
+  }
 }
 .price__tittle--hit {
   position: relative;
   &::before {
     position: absolute;
     content: "";
-    width: 74px;
-    height: 73px;
-    left: -65px;
-    top: -19px;
+    width: 61px;
+    height: 61px;
+    left: -20px;
+    top: -16px;
     background-image: url("../img/bg-hit.svg");
+    background-size: 51px 59px;
+    background-repeat: no-repeat;
+    @media (min-width: @desktop-width) {
+      width: 74px;
+      height: 73px;
+      left: -21px;
+      top: -19px;
+      background-size: 75px 73px;
+    }
   }
 }
 .price__item {
   display: block;
-  font-size: 24px;
+  font-size: 18px;
   line-height: 30px;
   font-weight: 300;
   text-align: center;
   text-transform: uppercase;
+  @media (min-width: @desktop-width) {
+    font-size: 24px;
+  }
 }
 .table__list {
   border-collapse: collapse;
 }
 .table__item {
-  font-size: 18px;
+  font-size: 14px;
   line-height: 30px;
   color: #283645;
   padding: 14px 64px 13px 21px;
   background: #ffffff;
   border: 2px solid #e5e5e5;
+  @media (min-width: @tablet-width) {
+    padding: 7px 16px 7px 8px;
+  }
+  @media (min-width: @desktop-width) {
+    font-size: 18px;
+    padding: 14px 64px 13px 21px;
+  }
 }
-.item__status {
-}
+
 .item_status--on {
   background-image: url("../img/icon-yes.svg");
   background-repeat: no-repeat;
