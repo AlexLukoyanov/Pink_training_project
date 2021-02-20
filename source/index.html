@@ -29,7 +29,8 @@
   pagination: {
     el: '.swiper-pagination',
     clickable: true,
-    bulletActiveClass: ""
+    bulletActiveClass: 'swiper-pagination-bullet-active',
+    clickableClass: 'swiper-pagination-clickable'
   },
 
   // Navigation arrows
@@ -191,35 +192,46 @@
         
         <div class="swiper-wrapper">
           <!-- Slides -->
-          <div class="swiper-slide">        
+          <div class="swiper-slide"> 
+            <ul class="reviews__list"> 
+            <li class="reviews__item">   
             <h4 class="reviews__name"> Николай Петров</h4>
+            <span class="reviews__age">25&nbsp;лет, водитель трамвая</span>
+            </li> 
+            <li class="reviews__item"> 
             <blockquote class="reviews__description">
-              «Это приложение перевернуло мой мир <br>
-              и позволило по-новому взглянуть на <br>
-              привычные серые вещи! А еще я <br>
-              познакомился со своей будущей женой <br>
-              в комментариях к выложенной <br>
-              фотографии!»
-            </blockquote></div>
-          <div class="swiper-slide">        <h4 class="reviews__name"> Николай Петров</h4>
-            <blockquote class="reviews__description">
-              «Это приложение перевернуло мой мир <br>
-              и позволило по-новому взглянуть на <br>
-              привычные серые вещи! А еще я <br>
-              познакомился со своей будущей женой <br>
-              в комментариях к выложенной <br>
-              фотографии!»
-            </blockquote></div>
-          <div class="swiper-slide">        <h4 class="reviews__name"> Николай Петров</h4>
-            <blockquote class="reviews__description">
-              «Это приложение перевернуло мой мир <br>
-              и позволило по-новому взглянуть на <br>
-              привычные серые вещи! А еще я <br>
-              познакомился со своей будущей женой <br>
-              в комментариях к выложенной <br>
-              фотографии!»
-            </blockquote></div>
-          ...
+              &laquo;Это приложение перевернуло мой мир и&nbsp;позволило по-новому взглянуть на&nbsp;привычные серые вещи! А&nbsp;еще я&nbsp;познакомился со&nbsp;своей будущей женой в&nbsp;комментариях к&nbsp;выложенной фотографии!&raquo;
+            </blockquote>
+            </li>
+            </ul>
+          </div>
+          <div class="swiper-slide">
+            <ul class="reviews__list "> 
+              <li class="reviews__item">   
+              <h4 class="reviews__name"> Николай Петров</h4>
+              <span class="reviews__age">25&nbsp;лет, водитель трамвая</span>
+              </li> 
+              <li class="reviews__item"> 
+              <blockquote class="reviews__description">
+                &laquo;Это приложение перевернуло мой мир и&nbsp;позволило по-новому взглянуть на&nbsp;привычные серые вещи! А&nbsp;еще я&nbsp;познакомился со&nbsp;своей будущей женой в&nbsp;комментариях к&nbsp;выложенной фотографии!&raquo;
+              </blockquote>
+              </li>
+              </ul>  
+          </div>       
+          <div class="swiper-slide">        
+            <ul class="reviews__list"> 
+              <li class="reviews__item">   
+              <h4 class="reviews__name"> Николай Петров</h4>
+              <span class="reviews__age">25&nbsp;лет, водитель трамвая</span>
+              </li> 
+              <li class="reviews__item"> 
+              <blockquote class="reviews__description">
+                &laquo;Это приложение перевернуло мой мир и&nbsp;позволило по-новому взглянуть на&nbsp;привычные серые вещи! А&nbsp;еще я&nbsp;познакомился со&nbsp;своей будущей женой в&nbsp;комментариях к&nbsp;выложенной фотографии!&raquo;
+              </blockquote>
+              </li>
+              </ul>
+          </div>
+         
         </div>
         <!-- If we need pagination -->
         <div class="swiper-pagination"></div>
