@@ -1,4 +1,4 @@
-const swiper = new Swiper('.swiper-container', {
+const swiper = new Swiper('.swiper-reviews', {
     direction: 'horizontal',
     loop: true,
   
@@ -6,14 +6,14 @@ const swiper = new Swiper('.swiper-container', {
       el: '.swiper-pagination',
       clickable: true,
       bulletActiveClass: 'swiper-pagination-bullet-active',
-      clickableClass: 'swiper-pagination-clickable'
+      clickableClass: 'swiper-pagination-clickable',
+      
     },
   
     navigation: {
       nextEl: '.swiper-button-next',
       prevEl: '.swiper-button-prev',
-    },
-  
-  
-  }
-  );
+    },  
+  })
+
+
